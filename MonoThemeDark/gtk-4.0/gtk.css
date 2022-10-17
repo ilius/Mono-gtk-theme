@@ -56,7 +56,7 @@ window.csd.tiled-right,
 window.csd.tiled-bottom { 
     border-radius: 0; 
     outline: none; 
-    box-shadow: 0 0 0 1px alpha(0, 0, 0, 0,0.15), 
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 
     0 0 0 20px transparent; 
 }
 
@@ -65,7 +65,7 @@ window.csd.tiled-top:backdrop,
 window.csd.tiled-left:backdrop, 
 window.csd.tiled-right:backdrop, 
 window.csd.tiled-bottom:backdrop { 
-    box-shadow: 0 0 0 1px alpha(0, 0, 0, 0,0.15), 
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 
     0 0 0 20px transparent; 
 }
 
@@ -171,7 +171,7 @@ cell {
 editablelabel>stack>text {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: transparent;
+    box-shadow: none;
 }
 
 columnview row:not(:selected) cell editablelabel:not(.editing):focus-within {
@@ -495,7 +495,7 @@ radio {
 check:not(:checked):not(:indeterminate):hover,
 radio:not(:checked):not(:indeterminate):hover {
     background-image: image(rgba(255, 255, 255, 0.25));
-    box-shadow: 0;
+    box-shadow: none;
 }
 
 check:not(:checked):not(:indeterminate):active,
@@ -684,7 +684,7 @@ popover.menu radio {
 popover.menu check:not(:checked):not(:indeterminate):hover,
 popover.menu radio:not(:checked):not(:indeterminate):hover {
     background-image: image(rgba(255, 255, 255, 0.25));
-    box-shadow: 0;
+    box-shadow: none;
 }
 
 popover.menu check:not(:checked):not(:indeterminate):active,
@@ -1864,7 +1864,7 @@ menubar>item {
     border: none;
     border-radius: 6px;
     margin-right: 3px;
-    box-shadow: transparent;
+    box-shadow: none;
 }
 
 menubar>item:hover {
@@ -2694,7 +2694,7 @@ combobox .linked:not(.vertical)>button.combo arrow,
 .linked:not(.vertical)>combobox>box>button.combo arrow {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    border-color: none;
+    border-color: transparent;
     -gtk-icon-source: -gtk-scaled(url("assets/combobox/combobox-arrow-dark.png"), url("assets/combobox/combobox-arrow-dark@2.png"));
     min-height: 20px;
     min-width: 18px;
@@ -3192,7 +3192,7 @@ dropdown button label {
 dropdown button arrow {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    border-color: none;
+    border-color: transparent;
     -gtk-icon-source: -gtk-scaled(url("assets/combobox/combobox-arrow-dark.png"), url("assets/combobox/combobox-arrow-dark@2.png"));
     min-height: 20px;
     min-width: 18px;
@@ -4131,7 +4131,7 @@ menubutton.circular>button {
 
 
 filechooser {
-    box-shadow: transparent;
+    box-shadow: none;
     background-color: #252525;
     border-radius: 0 0 12px 12px;
 }
@@ -7634,7 +7634,7 @@ tabbar undershoot.left {
     background: linear-gradient(to right, #252525, transparent 20px);
 }
 
-tabbar: undershoot.right {
+tabbar undershoot.right {
     background: linear-gradient(to left, #252525, transparent 20px);
 }
 
